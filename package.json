@@ -1,0 +1,26 @@
+{
+  "name": "first-http-service",
+  "version": "0.0.0",
+  "description": "第一个测试npm包",
+  "main": "helloWorld.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lin-vivian/node-demo.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "vivian-lin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lin-vivian/node-demo/issues"
+  },
+  "homepage": "https://github.com/lin-vivian/node-demo#readme"
+}
