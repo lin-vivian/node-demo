@@ -1,15 +1,9 @@
-var service = require('./httpService')  //服务器
-var router = require('./router')  //路由
+var http = require("http");
 
-var {
-    auth
-} = require('./requestHandlers') //请求处理程序的集合
+http.createServer(function (request, response) {
+    response.writeHead(200, { "Content-Type": "text/plain" });
+    response.write('Hello world');
+    response.end();
+}).listen(8888);
 
-//路由和请求处理程序关联
-var handle = {}
-handle['/'] = auth.login
-handle['/login'] = auth.login
-handle['/user'] = auth.user
-console.log(handle, '222222')
-
-service.start(router.route, handle)
+console.log('Server running at http://127.0.0.1:8888/')
