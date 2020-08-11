@@ -10,6 +10,5 @@ var handle = {}
 handle['/'] = auth.login
 handle['/login'] = auth.login
 handle['/user'] = auth.user
-console.log(handle, '222222')
 
 service.start(router.route, handle)
